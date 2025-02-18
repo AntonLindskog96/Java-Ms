@@ -8,5 +8,8 @@ public class CustomerApplication {
     public static void main(String[] args) {
         SpringApplication.run(CustomerApplication.class, args);
 
+        //http://localhost:5050/browser/
+        //localhost:8080/api/v1/customers insomnia
+
     }
 }
