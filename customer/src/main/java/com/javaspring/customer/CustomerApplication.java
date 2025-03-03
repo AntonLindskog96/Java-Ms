@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CustomerApplication {
     public static void main(String[] args) {
         SpringApplication.run(CustomerApplication.class, args);
+        System.out.println("hello world");
 
         //http://localhost:5050/browser/
         //localhost:8080/api/v1/customers insomnia
