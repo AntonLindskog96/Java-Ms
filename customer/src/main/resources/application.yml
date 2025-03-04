@@ -1,13 +1,13 @@
 server:
-  port: 8082
+  port: 8080
 
 spring:
   application:
-    name: auth
+    name: customer
   datasource:
     url: jdbc:postgresql://localhost:5432/customer
-    username: 'postgres'
-    password: 'password'
+    username: postgres
+    password: password
   jpa:
     properties:
       hibernate:
@@ -16,3 +16,7 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+    security:
+      user:
+        name: user
+        password: pass

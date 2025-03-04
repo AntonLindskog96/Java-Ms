@@ -10,6 +10,7 @@
   <modules>
     <module>customer</module>
       <module>auth</module>
+      <module>crypto</module>
   </modules>
 
 

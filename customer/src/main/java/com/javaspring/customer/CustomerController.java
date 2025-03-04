@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+
 @Slf4j
 @RestController
 
@@ -12,9 +15,9 @@ public class CustomerController {
 
     private final CustomerService customerService;
 
-    @GetMapping
-    public String greet() {
-        return "Customers page";
+    @GetMapping("/")
+    public String greet(HttpServletRequest request) {
+        return "Customers page" + request.getSession().getId();
     }
 
     @PostMapping
