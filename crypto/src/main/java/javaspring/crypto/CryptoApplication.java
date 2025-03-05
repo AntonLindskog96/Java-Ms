@@ -17,11 +17,8 @@ public class CryptoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        printCryptoPrices();
-    }
+        // Fetch and save cryptocurrency prices
+        cryptoService.fetchAndSaveCryptoPrices();
 
-    public void printCryptoPrices() {
-        String prices = cryptoService.getCryptoPrices();
-        System.out.println("Crypto Prices: " + prices);
     }
 }
